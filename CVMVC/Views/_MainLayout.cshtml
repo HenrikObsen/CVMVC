@@ -1,0 +1,119 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="SHORTCUT ICON" href="http://www.obsen.net/favicon.ico" />
+    <title>@Page.Title</title>
+    <link href="~/Content/Styles/Main.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/js/jquery.js" type="text/javascript"></script>
+    <script src="~/Content/js/Slider.js" type="text/javascript"></script>
+    <script src="~/Content/js/Main.js" type="text/javascript"></script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+   
+        <div id="mainWrapper">
+            <header id="top">
+                <a href="http://www.facebook.com/photo.php?fbid=10150383677145979&set=a.461794875978.266358.627245978&type=3&theater#!/henrik.obsen"
+                   target="_blank">
+                    <img alt="Facebook" title="Find mig på Facebook" src="~/Content/GFX/face.png" class="socIco" />
+                </a><a href="http://twitter.com/#!/Obsen" target="_blank">
+                    <img alt="Twitter" title="Følg mig på Twitter"
+                         src="~/Content/GFX/twit.png" class="socIco" />
+                </a><a href="http://www.linkedin.com/pub/henrik-trier-obsen/7/b95/601" target="_blank">
+                    <img alt="linked-in" title="linked-in" src="~/Content/GFX/linkedin.png" class="socIco" />
+                </a>
+            </header>
+            <div id="logoWrapper">
+                <div id="logoBox">
+                    <a href="/Home/Index/">
+                        <img id="logo" src="~/Content/GFX/Logo.png" alt="Logo" title="Home" />
+                    </a>
+                </div>
+                <nav id="menuTopBox">
+                    <div id="menuTopBoxLeft">
+                    </div>
+                    <div class="menuTopBoxCenter">
+                        <a href="Kontakt.aspx" class="topLink">KONTAKT</a>
+                    </div>
+                    <div class="menuTopBoxCenter">
+                        <a href="Dataliste.aspx" class="topLink">DATALISTE</a>
+                    </div>
+                    <div class="menuTopBoxCenter">
+                        <a href="Kompetencer.aspx" class="topLink">KOMPETENCER</a>
+                    </div>
+                    <div class="menuTopBoxCenter">
+                        <a href="Kvalifikationer.aspx" class="topLink">KVALIFIKATIONER</a>
+                    </div>
+                    <div id="homeBox">
+                        <a href="Default.aspx" class="topLink">HOME</a>
+                    </div>
+                    <div id="menuTopBoxRight">
+                    </div>
+                </nav>
+            </div>
+            <div id="sliderWrapper">
+                <img id="slider" alt="Slidshow" src="~/Content/GFX/Slite1.jpg" />
+            </div>
+            <div class="spacer01">
+            </div>
+           <!-- <div id="kompMenuWrapper">
+                <div id="kompCenter">
+
+                    <div class="firstLet">
+                        <a href="WebDesign.aspx" class="kompLinks">WEB DESIGN</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="Software.aspx" class="kompLinks">SOFTWARE</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="GrafiskDesign.aspx" class="kompLinks">GRAFISK DESIGN</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="3D.aspx" class="kompLinks">3D PRODUKTION</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="TurnTool.aspx" class="kompLinks">TURNTOOL</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="UvMatriale.aspx" class="kompLinks">UV MATRIALER</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="Hardware.aspx" class="kompLinks">HARDWARE</a>
+                    </div>
+                    <div class="firstLet">
+                        <a href="Foto.aspx" class="kompLinks">FOTO</a>
+                    </div>
+                    <div><a href="Diver.aspx"><div class="diver" onclick="diverClick()" onmouseover="diverMouseOver(this)" onmouseout="diverMouseOut(this)">&nbsp;</div></a></div>
+                   
+                </div>
+            </div> -->
+            <div class="spacer01">
+            </div>
+            <div id="contentWrapper">
+                <section id="content">
+                   @RenderBody()
+                </section>
+            </div>
+            <footer id="adress">
+                Henrik Obsen, Svinget 2, 8570 Lyngby J, Tlf: 42 78 96 05, hto@djes.dk. Copyright
+                © 2012
+            </footer>
+        </div>
+   
+</body>
+</html>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12009144-7']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
